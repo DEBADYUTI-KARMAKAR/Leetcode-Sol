@@ -31,14 +31,14 @@ public class GFG {
 //User function Template for Java
 
 class Solution {
-    int remove_duplicate(int a[],int n){
+    int remove_duplicate(int nums[],int N){
         // code here
-        int res=1;
-        for(int i=1;i<n;i++){
-            if(a[i] != a[res-1]){
-                a[res] = a[i];
+        int res = 1;
+        for(int i=0;i<nums.length;i++){
+            if(nums[res-1] != nums[i]){
+                nums[res] = nums[i];
                 res++;
-            } 
+            }
         }
         return res;
     }

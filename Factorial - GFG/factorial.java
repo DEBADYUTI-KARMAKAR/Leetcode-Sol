@@ -22,12 +22,13 @@ class GFG
 class Solution{
     static long factorial(int n){
         // code here
-        if(n<=1){
-            return 1;
-        }
-        long f = factorial(n-1);
-        long res = f * n;
-        return res;
+        // if(n<=1){
+        //     return 1;
+        // }
+        // long f = factorial(n-1);
+        // long res = f * n;
+        // return res;
+        return (n<=1)?1:factorial(n-1) * n;
         
     }
 }
